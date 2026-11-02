@@ -1,0 +1,255 @@
+{
+  "date": "2026-11-02T08:09:10.195Z",
+  "environment": {
+    "node": "v24.13.0",
+    "os": "win32 10.0.22621",
+    "cpu": "12th Gen Intel(R) Core(TM) i5-12450H",
+    "lighthouse": "13.6.0",
+    "playwright": "1.64.1"
+  },
+  "conditions": "Build demo, MSW default, Chromium headless, perfis padrão do Lighthouse, service worker preparado via /health antes de cada execução, storage preservado durante medições, pausa de 2500 ms após load, até três tentativas para descartar capturas incompletas do detalhe.",
+  "config": {
+    "paths": [
+      "/nfts/nft-001",
+      "/"
+    ],
+    "runs": 3,
+    "pauseAfterLoadMs": 2500,
+    "port": 4174,
+    "profiles": [
+      "mobile",
+      "desktop"
+    ],
+    "outputDirectory": "reports/lighthouse"
+  },
+  "results": [
+    {
+      "path": "/nfts/nft-001",
+      "profile": "mobile",
+      "runs": [
+        {
+          "attempts": 1,
+          "categories": {
+            "performance": 0.97,
+            "accessibility": 1,
+            "best-practices": 1,
+            "seo": 0.92,
+            "agentic-browsing": 0.5
+          },
+          "lcp": 2276.5584500000004,
+          "cls": 0.0001817569058773076,
+          "tbt": 142
+        },
+        {
+          "attempts": 1,
+          "categories": {
+            "performance": 0.98,
+            "accessibility": 1,
+            "best-practices": 1,
+            "seo": 0.92,
+            "agentic-browsing": 0.5
+          },
+          "lcp": 2234.48035,
+          "cls": 0.0001817569058773076,
+          "tbt": 90
+        },
+        {
+          "attempts": 1,
+          "categories": {
+            "performance": 0.98,
+            "accessibility": 1,
+            "best-practices": 1,
+            "seo": 0.92,
+            "agentic-browsing": 0.5
+          },
+          "lcp": 2247.3045,
+          "cls": 0.0001817569058773076,
+          "tbt": 77
+        }
+      ],
+      "median": {
+        "categories": {
+          "performance": 0.98,
+          "accessibility": 1,
+          "best-practices": 1,
+          "seo": 0.92,
+          "agentic-browsing": 0.5
+        },
+        "lcp": 2247.3045,
+        "cls": 0.0001817569058773076,
+        "tbt": 90
+      }
+    },
+    {
+      "path": "/nfts/nft-001",
+      "profile": "desktop",
+      "runs": [
+        {
+          "attempts": 1,
+          "categories": {
+            "performance": 0.98,
+            "accessibility": 1,
+            "best-practices": 1,
+            "seo": 0.92,
+            "agentic-browsing": 0.5
+          },
+          "lcp": 2265.99645,
+          "cls": 0.0001817569058773076,
+          "tbt": 90
+        },
+        {
+          "attempts": 1,
+          "categories": {
+            "performance": 0.98,
+            "accessibility": 1,
+            "best-practices": 1,
+            "seo": 0.92,
+            "agentic-browsing": 0.5
+          },
+          "lcp": 2280.85735,
+          "cls": 0.0001817569058773076,
+          "tbt": 90
+        },
+        {
+          "attempts": 1,
+          "categories": {
+            "performance": 0.98,
+            "accessibility": 1,
+            "best-practices": 1,
+            "seo": 0.92,
+            "agentic-browsing": 0.5
+          },
+          "lcp": 2251.1721000000002,
+          "cls": 0.0001817569058773076,
+          "tbt": 88
+        }
+      ],
+      "median": {
+        "categories": {
+          "performance": 0.98,
+          "accessibility": 1,
+          "best-practices": 1,
+          "seo": 0.92,
+          "agentic-browsing": 0.5
+        },
+        "lcp": 2265.99645,
+        "cls": 0.0001817569058773076,
+        "tbt": 90
+      }
+    },
+    {
+      "path": "/",
+      "profile": "mobile",
+      "runs": [
+        {
+          "attempts": 1,
+          "categories": {
+            "performance": 0.98,
+            "accessibility": 1,
+            "best-practices": 1,
+            "seo": 0.92,
+            "agentic-browsing": 0.5
+          },
+          "lcp": 2094.08835,
+          "cls": 0.0003877979432189147,
+          "tbt": 114
+        },
+        {
+          "attempts": 1,
+          "categories": {
+            "performance": 0.99,
+            "accessibility": 1,
+            "best-practices": 1,
+            "seo": 0.92,
+            "agentic-browsing": 0.5
+          },
+          "lcp": 2090.3013499999997,
+          "cls": 0.0003877979432189147,
+          "tbt": 87
+        },
+        {
+          "attempts": 1,
+          "categories": {
+            "performance": 0.98,
+            "accessibility": 1,
+            "best-practices": 1,
+            "seo": 0.92,
+            "agentic-browsing": 0.5
+          },
+          "lcp": 2095.6931999999997,
+          "cls": 0.0003877979432189147,
+          "tbt": 101
+        }
+      ],
+      "median": {
+        "categories": {
+          "performance": 0.98,
+          "accessibility": 1,
+          "best-practices": 1,
+          "seo": 0.92,
+          "agentic-browsing": 0.5
+        },
+        "lcp": 2094.08835,
+        "cls": 0.0003877979432189147,
+        "tbt": 101
+      }
+    },
+    {
+      "path": "/",
+      "profile": "desktop",
+      "runs": [
+        {
+          "attempts": 1,
+          "categories": {
+            "performance": 0.98,
+            "accessibility": 1,
+            "best-practices": 1,
+            "seo": 0.92,
+            "agentic-browsing": 0.5
+          },
+          "lcp": 2140.8145999999997,
+          "cls": 0.0003877979432189147,
+          "tbt": 113
+        },
+        {
+          "attempts": 1,
+          "categories": {
+            "performance": 0.98,
+            "accessibility": 1,
+            "best-practices": 1,
+            "seo": 0.92,
+            "agentic-browsing": 0.5
+          },
+          "lcp": 2145.62175,
+          "cls": 0.0003877979432189147,
+          "tbt": 108
+        },
+        {
+          "attempts": 1,
+          "categories": {
+            "performance": 0.95,
+            "accessibility": 1,
+            "best-practices": 1,
+            "seo": 0.92,
+            "agentic-browsing": 0.5
+          },
+          "lcp": 2427.2059499999996,
+          "cls": 0,
+          "tbt": 140
+        }
+      ],
+      "median": {
+        "categories": {
+          "performance": 0.98,
+          "accessibility": 1,
+          "best-practices": 1,
+          "seo": 0.92,
+          "agentic-browsing": 0.5
+        },
+        "lcp": 2145.62175,
+        "cls": 0.0003877979432189147,
+        "tbt": 113
+      }
+    }
+  ]
+}
