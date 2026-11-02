@@ -1,0 +1,13 @@
+.commerce-collector-fields{margin:22px 0}.commerce-collector-fields .account-field{gap:8px}.commerce-collector-fields .account-field label{color:#f5f1eb}
+.checkout-wallet-address{display:block;width:100%;min-height:43px;padding:10px 13px;border:1px solid #55321f;border-radius:5px;background:#2d1c15;color:#f5f1eb;font-size:13px;line-height:1.5;overflow-wrap:anywhere}
+.commerce-note-field{margin:22px 0 30px;max-width:370px}.commerce-note-field textarea{width:100%;min-height:135px;padding:12px;background:#1b110d;border:1px solid #55321f;border-radius:4px;color:#f5f1eb;font:inherit;font-size:13px;resize:vertical}
+.commerce-wallet-heading{border-top:1px solid #55321f;padding-top:26px;margin-top:30px!important}
+.commerce-checkout{background:transparent;border:0;padding:0}.commerce-checkout>h2{font-size:18px}.commerce-checkout>p{margin:8px 0;color:#cfb28c}
+.commerce-checkout .commerce-review{background:#241612;padding:20px;margin-top:25px;border:1px solid #3f2319}
+.commerce-page:has(.commerce-checkout) .commerce-layout{grid-template-columns:minmax(0,1fr) 405px;gap:32px}
+.commerce-page:has(.commerce-checkout) .commerce-summary{background:transparent;border:0;padding:0}
+.commerce-page:has(.commerce-checkout) .commerce-summary h2{font-size:18px}
+.checkout-page>h1{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.checkout-page .commerce-breadcrumb{margin-bottom:30px}
+.checkout-order-items{margin-bottom:24px}.checkout-order-head{display:flex;justify-content:space-between;border-bottom:1px solid #55321f;padding-bottom:7px;font-size:13px;font-weight:700}.checkout-order-items .commerce-review-item{background:#241612;border:0;padding:10px 5px;margin-top:10px;gap:10px}.checkout-order-items .commerce-review-item img{width:62px;height:62px;border-radius:5px}.checkout-order-items .commerce-review-item span{font-weight:700;min-width:0}.checkout-order-items .commerce-review-item strong{white-space:nowrap}
+@media(max-width:650px){.commerce-page:has(.commerce-checkout) .commerce-layout{display:flex;flex-direction:column}.commerce-collector-fields{grid-template-columns:1fr}.commerce-note-field{max-width:none}.checkout-wallet-address{font-size:12px}}
+@media(max-width:650px){.checkout-page>h1{position:static;width:auto;height:auto;overflow:visible;clip-path:none;font-size:20px;margin:10px 0 25px}.checkout-page .commerce-breadcrumb{display:none}.checkout-page .commerce-checkout{order:0}.checkout-page .commerce-summary{order:1}.checkout-page .commerce-layout{gap:22px}}

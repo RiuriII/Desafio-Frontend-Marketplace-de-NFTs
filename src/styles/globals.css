@@ -1,0 +1,59 @@
+@import '@fontsource/roboto-mono/400.css';
+@import '@fontsource/roboto-mono/500.css';
+@import '@fontsource/roboto-mono/700.css';
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import './market.css';
+@import './auth.css';
+@import './commerce.css';
+@import './account.css';
+@import './checkout-design.css';
+@import './confirmation.css';
+@import './cart-design.css';
+@import './home.css';
+@import './detail.css';
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+
+:root {
+  font-family: 'Roboto Mono', ui-monospace, monospace;
+  color-scheme: dark;
+  --background: #140d0a;
+  --foreground: #f5f1eb;
+  --primary: #d28a4c;
+  --primary-foreground: #140d0a;
+  --muted: #241612;
+  --muted-foreground: #cfb28c;
+  --accent: #38220f;
+  --accent-foreground: #f5f1eb;
+  --border: #3f2319;
+  --input: #3f2319;
+  --ring: #e89b55;
+}
+
+@layer base {
+  * { @apply border-border; }
+  body { @apply m-0 min-w-0 bg-background text-foreground; }
+  :focus-visible { outline: 2px solid var(--ring); outline-offset: 3px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

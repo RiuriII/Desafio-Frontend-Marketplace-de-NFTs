@@ -1,0 +1,177 @@
+.market-container {
+  margin: auto;
+  padding: 0 24px;
+  max-width: 1248px;
+}
+.market-header {
+  background: #140d0a;
+}
+.market-header-inner {
+  margin: auto;
+  min-height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  border-bottom: 1px solid #3f2319;
+  padding: 0 24px;
+  max-width: 1248px;
+}
+.brand {
+  font-weight: 800;
+  letter-spacing: .13em;
+  font-size: 19px;
+  color: #f5f1eb;
+  text-decoration: none;
+}
+.brand-mark {
+  color: #d28a4c;
+  margin-left: 3px;
+}
+.main-nav {
+  display: flex;
+  gap: 38px;
+  align-items: center;
+}
+.main-nav a {
+  color: #cfb28c;
+  text-decoration: none;
+  font-size: 14px;
+}
+.main-nav span {
+  color: #cfb28c;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: .65;
+}
+.main-nav .active {
+  color: #e89b55;
+  border-bottom: 2px solid #e89b55;
+  padding: 29px 0;
+}
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  color: #f5f1eb;
+}
+.header-actions a {
+  color: inherit;
+}
+.desktop-signin {
+  background: #d28a4c;
+  color: #140d0a;
+  font-weight: 700;
+  border: 0;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+.mobile-account {
+  display: none;
+}
+.eyebrow {
+  font-size: 14px;
+  color: #e89b55;
+  font-weight: 700;
+}
+.nft-grid {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 42px 28px;
+}
+.nft-card {
+  color: #f5f1eb;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.nft-card:hover .nft-card-name {
+  color: #e89b55;
+}
+.nft-card:focus-visible .nft-card-name {
+  color: #e89b55;
+}
+.nft-card-image {
+  display: block;
+  position: relative;
+  background: #241612;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+.nft-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sold-out {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  background: #140d0a;
+  padding: 5px;
+  font-size: 11px;
+}
+.nft-card-name {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 12px 0 6px;
+}
+.nft-card-price {
+  color: #e89b55;
+  font-size: 14px;
+  font-weight: 700;
+}
+.market-footer {
+  border-top: 1px solid #3f2319;
+  padding: 38px 0 60px;
+  color: #cfb28c;
+}
+
+@media (max-width:900px) {
+  .main-nav {
+    gap: 14px;
+  }
+  .nft-grid {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+}
+
+@media (max-width:650px) {
+  .market-container {
+    padding: 0 20px;
+  }
+  .market-header-inner {
+    min-height: 64px;
+    padding: 0 20px;
+  }
+  .brand {
+    font-size: 17px;
+  }
+  .main-nav {
+    display: none;
+  }
+  .desktop-signin {
+    display: none;
+  }
+  .mobile-account {
+    display: block;
+  }
+  .header-actions {
+    gap: 18px;
+  }
+  .nft-grid {
+    gap: 22px 14px;
+  }
+  .nft-card-name {
+    font-size: 12px;
+  }
+  .nft-card-price {
+    font-size: 12px;
+  }
+  .market-footer {
+    font-size: 12px;
+  }
+}
+@keyframes shimmer{to{background-position-x:-250%}}
