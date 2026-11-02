@@ -26,7 +26,6 @@ dist-ssr
 .env
 .env.*
 !.env.example
-!.env.demo
 .tanstack/
 playwright-report/
 test-results/

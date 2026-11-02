@@ -23,7 +23,7 @@ npm run dev
 
 Abra o endereço exibido pelo Vite. `npm run dev` usa o modo demo com MSW; nenhuma variável local é necessária. A home fica em `/`, um NFT em `/nfts/nft-001` e o diagnóstico de REST/Socket.IO em `/health`. Checkout, pedidos, perfil e carteiras exigem login.
 
-Para personalizar o ambiente, copie `.env.example` para `.env.local` e reinicie o Vite:
+Somente `.env.example` é versionado. Para personalizar o ambiente, copie-o para `.env.local` e reinicie o Vite:
 
 | Variável | Padrão | Uso |
 | --- | --- | --- |

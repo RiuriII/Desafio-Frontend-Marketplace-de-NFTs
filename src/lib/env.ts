@@ -1,7 +1,7 @@
 import { z } from 'zod'
 
 const schema = z.object({
-  VITE_ENABLE_MOCKS: z.enum(['true', 'false']).default('false'),
+  VITE_ENABLE_MOCKS: z.enum(['true', 'false']).default(import.meta.env.MODE === 'demo' ? 'true' : 'false'),
   VITE_API_BASE_URL: z.string().min(1).default('/api'),
   VITE_SOCKET_URL: z.url().optional(),
   VITE_MOCK_SCENARIO: z.enum(['default', 'slow', 'variable-latency', 'out-of-order', 'http-error', 'network-error']).default('default'),
